@@ -1,3 +1,4 @@
+import MedicationReminders from "./MedicationReminders";
 import React from 'react';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LandingPage } from './components/landing/LandingPage';
@@ -26,6 +27,8 @@ export default function App() {
   return (
     <AuthProvider>
       <AppContent />
+      <MedicationReminders />
+
     </AuthProvider>
   );
 }
